@@ -1,0 +1,1731 @@
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Morton.otf);
+}
+@font-face {
+    font-family: myFont2;
+    src: url(fonts/Acumin-RPro.otf);
+}
+body{
+    background: rgb(180, 125, 145);
+    height: 1700px;
+}
+#homebutton{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 1.786%;
+    top: 40px;
+}
+#homebutton:hover{
+    box-shadow: 5px 5px 3px black;
+    border-radius: 100%;
+}
+#title{
+    font-family: 'myFont';
+    position: absolute;
+    left: 7.44%;
+    top: 15px;
+    font-size: 36px;
+    width: 1000px;
+    color: white;
+}
+#book{
+    height: 512px;
+    width: 336.8px;
+    position: absolute;
+    left: 9.426%;
+    top: 190px;
+    box-shadow: 5px 5px 3px black;
+}
+
+#star1{
+    height: 96.8px;
+    width: 108px;
+    position: absolute;
+    top: 150px;
+    left: 86.310%;
+}
+#star2{
+    height: 96.8px;
+    width: 108px;
+    position: absolute;
+    top: 275px;
+    left: 86.310%;
+}
+#star3{
+    height: 96.8px;
+    width: 108px;
+    position: absolute;
+    top: 400px;
+    left: 86.310%;
+}
+#star4{
+    height: 50.8px;
+    width: 108px;
+    position: absolute;
+    top: 525px;
+    left: 86.310%;
+}
+
+#summary{
+    font-size: 17px;
+    width: 800px;
+    position: absolute;
+    top: 175px;
+    left: 33.333%;
+    font-family: 'myFont2';
+}
+#reviewtitle{
+    position: absolute;
+    font-family: 'myFont';
+    left: 33.333%;
+    top: 232px; 
+    color: white;
+}
+#review{
+    width: 800px;
+    font-size: 17px;
+    position: absolute;
+    top: 280px;
+    left: 33.333%;
+    font-family: 'myFont2';
+}
+
+#statstitle{
+    position: absolute;
+    font-family: 'myFont';
+    left: 33.333%;
+    top: 380px; 
+    color: white;
+}
+
+#stat1{
+    position: absolute;
+    left: 33.333%;
+    top: 430px; 
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat2{
+    position: absolute;
+    left: 33.333%;
+    top: 460px; 
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat3{
+    position: absolute;
+    left: 33.333%;
+    top: 490px; 
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat4{
+    position: absolute;
+    left: 33.333%;
+    top: 520px; 
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat5{
+    position: absolute;
+    left: 33.333%;
+    top: 550px; 
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat6{
+    position: absolute;
+    left: 33.333%;
+    top: 580px;
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat7{
+    position: absolute;
+    left: 33.333%;
+    top: 610px;
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat8{
+    position: absolute;
+    left: 33.333%;
+    top: 640px;
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+#stat9{
+    position: absolute;
+    left: 33.333%;
+    top: 670px;
+    font-family: 'myFont2';
+    font-size: 17px;
+}
+
+
+#spoilers{
+    width: 99.5%;
+    text-align: center;
+    font-family: 'myFont';
+    position: absolute;
+    top: 725px;
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+}
+#grexpl{
+    width: 99.5%;
+    text-align: center;
+    font-family: 'myFont2';
+    position: absolute;
+    top: 845px;
+    font-size: 18px;
+}
+.percentage{
+    font-size: 18px;
+}
+
+/*animations*/
+#stem1{
+    height: 150px;
+    width: 10px;
+    position: absolute;
+    top: 1431px;
+    left: 26.28%;
+    z-index: -10;
+}
+@keyframes stem1 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1431px;
+        height: 150px;
+        width: 10px;}
+}
+.stem1 {
+    animation-name: stem1;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+#leaves1{
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 1453px;
+    left: 26.12%;
+}
+@keyframes leaves1 {
+    0% {opacity: 0; }
+    99% {opacity: 0; }
+    100% {opacity: 1;}
+}
+.leaves1 {
+    animation-name: leaves1;
+    animation-duration: 10.5s;
+    animation-iteration-count: 1;
+}
+#leaves2{
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1480px;
+    left: 26.86%;
+}
+.leaves2 {
+    animation-name: leaves1;
+    animation-duration: 11s;
+    animation-iteration-count: 1;
+}
+#leaves3{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1512px;
+    left: 26%;
+}
+.leaves3 {
+    animation-name: leaves1;
+    animation-duration: 11.5s;
+    animation-iteration-count: 1;
+}
+#leaves4{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1543px;
+    left: 26.681%;
+}
+.leaves4 {
+    animation-name: leaves1;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#stem2{
+    height: 250px;
+    width: 11px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1330px;
+    left: 30.34%;
+    z-index: -10;
+}
+@keyframes stem2 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1330px;
+        height: 250px;
+        width: 11px;}
+}
+.stem2 {
+    animation-name: stem2;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#leaves5{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1350px;
+    left: 30.66%;
+}
+.leaves5 {
+    animation-name: leaves1;
+    animation-duration: 12.5s;
+    animation-iteration-count: 1;
+}
+#leaves6{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1365px;
+    left: 29.94%;
+}
+.leaves6 {
+    animation-name: leaves1;
+    animation-duration: 13s;
+    animation-iteration-count: 1;
+}
+#leaves7{
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1395px;
+    left: 30.5803%;
+}
+.leaves7 {
+    animation-name: leaves1;
+    animation-duration: 13.5s;
+    animation-iteration-count: 1;
+}
+#leaves8{
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 1415px;
+    left: 29.75%;
+}
+.leaves8 {
+    animation-name: leaves1;
+    animation-duration: 14s;
+    animation-iteration-count: 1;
+}
+#leaves9{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1470px;
+    left: 29.78%;
+}
+.leaves9 {
+    animation-name: leaves1;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+#leaves10{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1445px;
+    left: 30.58%;
+}
+.leaves10 {
+    animation-name: leaves1;
+    animation-duration: 14.5s;
+    animation-iteration-count: 1;
+}
+#leaves11{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1500px;
+    left: 30.7%;
+}
+.leaves11 {
+    animation-name: leaves1;
+    animation-duration: 15.5s;
+    animation-iteration-count: 1;
+}
+#leaves12{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1530px;
+    left: 29.989%;
+}
+.leaves12 {
+    animation-name: leaves1;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+}
+/*wdky3*/
+#leaves13{
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1565px;
+    left: 35.55%;
+}
+.leaves13 {
+    animation-name: leaves1;
+    animation-duration: 7.5s;
+    animation-iteration-count: 1;
+}
+#leaves14{
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    transform: scaleY(-1);
+    top: 1580px;
+    left: 34.6%;
+}
+.leaves14 {
+    animation-name: leaves1;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+#stem3{
+    height: 250px;
+    width: 11px;
+    position: absolute;
+    top: 1329px;
+    left: 35.79%;
+    z-index: -10;
+}
+@keyframes stem3 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1329px;
+        height: 250px;
+        width: 11px;}
+}
+.stem3 {
+    animation-name: stem3;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#leaves15{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1340px;
+    left: 36.225%;
+}
+.leaves15 {
+    animation-name: leaves1;
+    animation-duration: 12.5s;
+    animation-iteration-count: 1;
+}
+#leaves16{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1365px;
+    left: 35.56%;
+}
+.leaves16 {
+    animation-name: leaves1;
+    animation-duration: 13s;
+    animation-iteration-count: 1;
+}
+#leaves17{
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1385px;
+    left: 36.37%;
+}
+.leaves17 {
+    animation-name: leaves1;
+    animation-duration: 13.5s;
+    animation-iteration-count: 1;
+}
+#leaves18{
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 1422px;
+    left: 35.585%;
+}
+.leaves18 {
+    animation-name: leaves1;
+    animation-duration: 14s;
+    animation-iteration-count: 1;
+}
+#leaves19{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1480px;
+    left: 35.55%;
+}
+.leaves19 {
+    animation-name: leaves1;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+#leaves20{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1445px;
+    left: 36.44%;
+}
+.leaves20 {
+    animation-name: leaves1;
+    animation-duration: 14.5s;
+    animation-iteration-count: 1;
+}
+#leaves21{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1510px;
+    left: 36.294%;
+}
+.leaves21 {
+    animation-name: leaves1;
+    animation-duration: 15.5s;
+    animation-iteration-count: 1;
+}
+#leaves22{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1540px;
+    left: 35.32%;
+}
+.leaves22 {
+    animation-name: leaves1;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+}
+#stem4{
+    height: 355px;
+    width: 13px;
+    position: absolute;
+    top: 1227px;
+    left: 39.9%;
+    z-index: -10;
+}
+@keyframes stem4 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1227px;
+        height: 355px;
+        width: 13px;}
+}
+.stem4 {
+    animation-name: stem4;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+#leaves23{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1250px;
+    left: 39.66%;
+}
+.leaves23 {
+    animation-name: leaves1;
+    animation-duration: 15.5s;
+    animation-iteration-count: 1;
+}
+#leaves24{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1280px;
+    left: 40.49%;
+}
+.leaves24 {
+    animation-name: leaves1;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+}
+#leaves25{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1320px;
+    left: 39.78%;
+}
+.leaves25 {
+    animation-name: leaves1;
+    animation-duration: 16.5s;
+    animation-iteration-count: 1;
+}
+#leaves26{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1350px;
+    left: 40.63%;
+}
+.leaves26 {
+    animation-name: leaves1;
+    animation-duration: 17s;
+    animation-iteration-count: 1;
+}
+#leaves27{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1390px;
+    left: 39.78%;
+}
+.leaves27 {
+    animation-name: leaves1;
+    animation-duration: 17.5s;
+    animation-iteration-count: 1;
+}
+#leaves28{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1430px;
+    left: 40.63%;
+}
+.leaves28 {
+    animation-name: leaves1;
+    animation-duration: 18s;
+    animation-iteration-count: 1;
+}
+#leaves29{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1465px;
+    left: 39.66%;
+}
+.leaves29 {
+    animation-name: leaves1;
+    animation-duration: 18.5s;
+    animation-iteration-count: 1;
+}
+#leaves30{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1505px;
+    left: 40.4%;
+}
+.leaves30 {
+    animation-name: leaves1;
+    animation-duration: 19s;
+    animation-iteration-count: 1;
+}
+#leaves31{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1538px;
+    left: 39.43%;
+}
+.leaves31 {
+    animation-name: leaves1;
+    animation-duration: 19.5s;
+    animation-iteration-count: 1;
+}
+
+#stem5{
+    height: 250px;
+    width: 11px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1330px;
+    left: 44.6%;
+    z-index: -10;
+}
+@keyframes stem5 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1330px;
+        height: 250px;
+        width: 11px;}
+}
+.stem5 {
+    animation-name: stem5;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#leaves32{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1345px;
+    left: 44.97%;
+}
+.leaves32 {
+    animation-name: leaves1;
+    animation-duration: 12.5s;
+    animation-iteration-count: 1;
+}
+#leaves33{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1370px;
+    left: 44.181%;
+}
+.leaves33 {
+    animation-name: leaves1;
+    animation-duration: 13s;
+    animation-iteration-count: 1;
+}
+#leaves34{
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1395px;
+    left: 44.86%;
+}
+.leaves34 {
+    animation-name: leaves1;
+    animation-duration: 13.5s;
+    animation-iteration-count: 1;
+}
+#leaves35{
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 1422px;
+    left: 44%;
+}
+.leaves35 {
+    animation-name: leaves1;
+    animation-duration: 14s;
+    animation-iteration-count: 1;
+}
+#leaves36{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1455px;
+    left: 44.87%;
+}
+.leaves36 {
+    animation-name: leaves1;
+    animation-duration: 14.5s;
+    animation-iteration-count: 1;
+}
+#leaves37{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1485px;
+    left: 44.1%;
+}
+.leaves37 {
+    animation-name: leaves1;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+#leaves38{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1510px;
+    left: 45.015%;
+}
+.leaves38 {
+    animation-name: leaves1;
+    animation-duration: 15.5s;
+    animation-iteration-count: 1;
+}
+#leaves39{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1540px;
+    left: 44.335%;
+}
+.leaves39 {
+    animation-name: leaves1;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+}
+/*wdky6*/
+#leaves40{
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    transform: scaleX(1);
+    top: 1566px;
+    left: 41.7%;
+}
+.leaves40 {
+    animation-name: leaves1;
+    animation-duration: 7.75s;
+    animation-iteration-count: 1;
+}
+#leaves41{
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 1582px;
+    left: 42.64%;
+}
+.leaves41 {
+    animation-name: leaves1;
+    animation-duration: 8.25s;
+    animation-iteration-count: 1;
+}
+
+
+#stem6{
+    height: 430px;
+    width: 15px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1150px;
+    left: 61.8%;
+    z-index: -10;
+}
+@keyframes stem6 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1150px;
+        height: 430px;
+        width: 15px;}
+}
+.stem6 {
+    animation-name: stem6;
+    animation-duration: 18s;
+    animation-iteration-count: 1;
+}
+#leaves42{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1175px;
+    left: 61.55%;
+}
+.leaves42 {
+    animation-name: leaves1;
+    animation-duration: 18.5s;
+    animation-iteration-count: 1;
+}
+#leaves43{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1200px;
+    left: 62.23%;
+}
+.leaves43 {
+    animation-name: leaves1;
+    animation-duration: 19s;
+    animation-iteration-count: 1;
+}
+#leaves44{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1235px;
+    left: 61.36%;
+}
+.leaves44 {
+    animation-name: leaves1;
+    animation-duration: 19.5s;
+    animation-iteration-count: 1;
+}
+#leaves45{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1270px;
+    left: 62.12%;
+}
+.leaves45 {
+    animation-name: leaves1;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+}
+#leaves46{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1315px;
+    left: 61.24%;
+}
+.leaves46 {
+    animation-name: leaves1;
+    animation-duration: 20.5s;
+    animation-iteration-count: 1;
+}
+#leaves47{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1355px;
+    left: 62.12%;
+}
+.leaves47 {
+    animation-name: leaves1;
+    animation-duration: 21s;
+    animation-iteration-count: 1;
+}
+#leaves48{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1410px;
+    left: 61.27%;
+}
+.leaves48 {
+    animation-name: leaves1;
+    animation-duration: 21.5s;
+    animation-iteration-count: 1;
+}
+#leaves49{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1460px;
+    left: 62.33%;
+}
+.leaves49 {
+    animation-name: leaves1;
+    animation-duration: 22s;
+    animation-iteration-count: 1;
+}
+#leaves50{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1515;
+    left: 61.63%;
+}
+.leaves50 {
+    animation-name: leaves1;
+    animation-duration: 22.5s;
+    animation-iteration-count: 1;
+}
+#stem7{
+    height: 400px;
+    width: 16px;
+    position: absolute;
+    top: 1181px;
+    left: 79.7%;
+    z-index: -10;
+}
+@keyframes stem7 {
+    0% {top: 1577px;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1181px;
+        height: 400px;
+        width: 16px;}
+}
+.stem7 {
+    animation-name: stem7;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+}
+#leaves51{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1210px;
+    left: 80.31%;
+}
+.leaves51 {
+    animation-name: leaves1;
+    animation-duration: 16.5s;
+    animation-iteration-count: 1;
+}
+#leaves52{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1250px;
+    left: 79.63%;
+}
+.leaves52 {
+    animation-name: leaves1;
+    animation-duration: 17s;
+    animation-iteration-count: 1;
+}
+#leaves53{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1295px;
+    left: 80.55%;
+}
+.leaves53 {
+    animation-name: leaves1;
+    animation-duration: 17.5s;
+    animation-iteration-count: 1;
+}
+#leaves54{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1340px;
+    left: 79.72%;
+}
+.leaves54 {
+    animation-name: leaves1;
+    animation-duration: 18s;
+    animation-iteration-count: 1;
+}
+#leaves55{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1390px;
+    left: 80.62%;
+}
+.leaves55 {
+    animation-name: leaves1;
+    animation-duration: 18.5s;
+    animation-iteration-count: 1;
+}
+#leaves56{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1440px;
+    left: 79.54%;
+}
+.leaves56 {
+    animation-name: leaves1;
+    animation-duration: 19s;
+    animation-iteration-count: 1;
+}
+#leaves57{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 1490px;
+    left: 80.34%;
+}
+.leaves57 {
+    animation-name: leaves1;
+    animation-duration: 19.5s;
+    animation-iteration-count: 1;
+}
+#leaves58{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 1540px;
+    left: 79.24%;
+}
+.leaves58 {
+    animation-name: leaves1;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+}
+
+/*graph*/
+#graphtitle{
+    position: absolute;
+    top: 945px;
+    left: 44.76%;
+    font-family: 'myFont';
+}
+#horizontalgraph{
+    background: black;
+    position: absolute;
+    left: 20.95%;
+    top: 1577px;
+    width: 62.5%;
+    height: 6px;
+}
+#horvalue1{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 26.964%;
+}
+#hornum1{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 26.19%;
+}
+#horvalue2{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 32.917%;
+}
+#hornum2{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 32.321%;
+}
+#horvalue3{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 38.869%;
+}
+#hornum3{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 38.274%;
+}
+#horvalue4{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 44.821%;
+}
+#hornum4{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 44.226%;
+}
+#horvalue5{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 50.774%;
+}
+#hornum5{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 50.179%;
+}
+#horvalue6{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 56.726%;
+}
+#hornum6{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 56.131%;
+}
+#horvalue7{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 62.679%;
+}
+#hornum7{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 62.083%;
+}
+#horvalue8{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 68.631%;
+}
+#hornum8{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 68.036%;
+}
+#horvalue9{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 74.583%;
+}
+#hornum9{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 73.988%;
+}
+#horvalue10{
+    height: 20px;
+    width: 3px;
+    background: black;
+    position: absolute;
+    top: 1571px;
+    left: 80.536%;
+}
+#hornum10{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1571px;
+    left: 79.762%;
+}
+
+
+#verticalgraph{
+    background: black;
+    position: absolute;
+    left: 20.952%;
+    top: 1052px;
+    width: 6px;
+    height: 525px;
+}
+#vertvalue1{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1528px;
+    left: 20.595%;
+}
+#vertnum1{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1497px;
+    left: 19.643%;
+}
+#vertvalue2{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1478px;
+    left: 20.595%;
+}
+#vertnum2{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1447px;
+    left: 19.643%;
+}
+#vertvalue3{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1428px;
+    left: 20.595%;
+}
+#vertnum3{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1397px;
+    left: 19.643%;
+}
+#vertvalue4{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1378px;
+    left: 20.595%;
+}
+#vertnum4{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1347px;
+    left: 19.643%;
+}
+#vertvalue5{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1328px;
+    left: 20.595%;
+}
+#vertnum5{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1297px;
+    left: 19.643%;
+}
+#vertvalue6{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1278px;
+    left: 20.595%;
+}
+#vertnum6{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1247px;
+    left: 19.643%;
+}
+#vertvalue7{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1228px;
+    left: 20.595%;
+}
+#vertnum7{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1197px;
+    left: 19.643%;
+}
+#vertvalue8{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1178px;
+    left: 20.595%;
+}
+#vertnum8{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1147px;
+    left: 19.643%;
+}
+#vertvalue9{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1128px;
+    left: 20.595%;
+}
+#vertnum9{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1094px;
+    left: 19.643%;
+}
+#vertvalue10{
+    width: 20px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 1078px;
+    left: 20.595%;
+}
+#vertnum10{
+    position: absolute;
+    font-family: 'myfont';
+    font-size: 18px;
+    top: 1047px;
+    left: 19.048%;
+}
+#horlabel{
+    font-family: 'myFont';
+    position: absolute;
+    top: 1605px;
+    left: 48.036%;
+}
+#vertlabel{
+    font-family: 'myFont';
+     /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation */
+   writing-mode: vertical-rl;
+   position: absolute;
+   top: 1165px;
+   left: 15.595%;
+   height: 350px;
+}
+.graph.wd1{
+    opacity: 0.15;
+}
+.graph.wd2{
+    opacity: 0.15;
+}
+.graph.wd3{
+    opacity: 0.15;
+}
+.graph.wd4{
+    opacity: 0.15;
+}
+.graph.wd5{
+    opacity: 0.15;
+}
+.graph.wd6{
+    opacity: 0.15;
+}
+.graph.wd7{
+    opacity: 0.15;
+}
+.graph.wd8{
+    opacity: 0.15;
+}
+.graph.wd9{
+    opacity: 0.15;
+}
+#wdky1{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1420px;
+    left: 25.893%;
+}
+@keyframes flower1 {
+    0% {top: 1577px;
+        left: 26.28%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1420px;
+        left: 25.893%;
+        height: 20px;
+        width: 20px;}
+}
+.flower1 {
+    animation-name: flower1;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+#wdky1:hover{
+    opacity: 1;
+}
+#red1{
+    position: absolute;
+    top: 1402px;
+    left: 27.781%;
+    color: white;
+    opacity: 0;
+}
+#wdky2{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1319px;
+    left: 30.06%;
+}
+@keyframes flower2 {
+    0% {top: 1577px;
+        left: 30.34%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1319px;
+        left: 30.06%;
+        height: 20px;
+        width: 20px;}
+}
+.flower2 {
+    animation-name: flower2;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#wdky2:hover{
+    opacity: 1;
+}
+#red2{
+    position: absolute;
+    top: 1301px;
+    left: 31.948%;
+    color: white;
+    opacity: 0;
+}
+#wdky3{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1569px;
+    left: 34.821%;
+}
+@keyframes flower3 {
+    0% {height: 1px;
+        width: 1px;
+        top: 1580px;}
+    100% {height: 20px;
+        width: 20px;
+        top: 1569px;}
+}
+.flower3 {
+    animation-name: flower3;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+#wdky3:hover{
+    opacity: 1;
+}
+#red3{
+    position: absolute;
+    top: 1551px;
+    left: 36.71%;
+    color: white;
+    opacity: 0;
+}
+#wdky4{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1319px;
+    left: 35.417%;
+}
+@keyframes flower4 {
+    0% {top: 1577px;
+        left: 35.79%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1319px;
+        left: 35.417%;
+        height: 20px;
+        width: 20px;}
+}
+.flower4 {
+    animation-name: flower4;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#wdky4:hover{
+    opacity: 1;
+}
+#red4{
+    position: absolute;
+    top: 1301px;
+    left: 37.305%;
+    color: white;
+    opacity: 0;
+}
+#wdky5{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1219px;
+    left: 39.583%;
+}
+@keyframes flower5 {
+    0% {top: 1577px;
+        left: 39.9%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1219px;
+        left: 39.583%;
+        height: 20px;
+        width: 20px;}
+}
+.flower5 {
+    animation-name: flower5;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+#wdky5:hover{
+    opacity: 1;
+}
+#red5{
+    position: absolute;
+    top: 1201px;
+    left: 41.471%;
+    color: white;
+    opacity: 0;
+}
+#wdky6{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1569px;
+    left: 41.964%;
+}
+@keyframes flower6 {
+    0% {height: 0.5px;
+        width: 0.5px;
+        top: 1580px;}
+    100% {height: 20px;
+        width: 20px;
+        top: 1569px;}
+}
+.flower6 {
+    animation-name: flower6;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+#wdky6:hover{
+    opacity: 1;
+}
+#red6{
+    position: absolute;
+    top: 1551px;
+    left: 43.852%;
+    color: white;
+    opacity: 0;
+}
+#wdky7{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1319px;
+    left: 44.345%;
+}
+@keyframes flower7 {
+    0% {top: 1577px;
+        left: 44.6%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1319px;
+        left: 44.345%;
+        height: 20px;
+        width: 20px;}
+}
+.flower7 {
+    animation-name: flower7;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+}
+#wdky7:hover{
+    opacity: 1;
+}
+#red7{
+    position: absolute;
+    top: 1301px;
+    left: 46.233%;
+    color: white;
+    opacity: 0;
+}
+#wdky8{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1144px;
+    left: 61.607%;
+}
+@keyframes flower8 {
+    0% {top: 1577px;
+        left: 61.8%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1144px;
+        left: 61.607%;
+        height: 20px;
+        width: 20px;}
+}
+.flower8 {
+    animation-name: flower8;
+    animation-duration: 18s;
+    animation-iteration-count: 1;
+}
+#wdky8:hover{
+    opacity: 1;
+}
+#red8{
+    position: absolute;
+    top: 1126px;
+    left: 63.495%;
+    color: white;
+    opacity: 0;
+}
+#wdky9{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1169px;
+    left: 79.464%;
+}
+@keyframes flower9 {
+    0% {top: 1577px;
+        left: 79.7%;
+        height: 1px;
+        width: 1px;}
+    100% {top: 1169px;
+        left: 79.464%;
+        height: 20px;
+        width: 20px;}
+}
+.flower9 {
+    animation-name: flower9;
+    animation-duration: 16s;
+    animation-iteration-count: 1;
+}
+#wdky9:hover{
+    opacity: 1;
+}
+#red9{
+    position: absolute;
+    top: 1126px;
+    left: 81.382%;
+    color: white;
+    opacity: 0;
+    width: 300px;
+}
+
